@@ -257,6 +257,10 @@ TotodilePokeBallScript:
 	promptbutton
 	waitsfx
 	givepoke TOTODILE, PLAIN_FORM, 5, ORAN_BERRY
+	loadmem wPartyMon1HPAtkDV, $ff
+	loadmem wPartyMon1DefSpeDV, $ff
+	loadmem wPartyMon1SatSdfDV, $ff
+	loadmem wPartyMon1Personality, SHINY_MASK | HIDDEN_ABILITY | NAT_ATK_UP_SATK_DOWN
 	writetext LyraChoosesStarterText
 	waitbutton
 	closetext
