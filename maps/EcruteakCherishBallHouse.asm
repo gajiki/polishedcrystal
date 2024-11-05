@@ -29,38 +29,40 @@ EcruteakCherishBallHouseGrampsScript:
 	jumpthisopenedtext
 
 .Text2:
-	text "I will always"
-	line "cherish the time"
+	text "I wonder what"
+	line "Professor Elm"
 
-	para "I spent with"
-	line "#mon."
+	para "learned about"
+	line "Quilava and"
+	cont "these stones?"
 	done
 
 .Text1:
-	text "My #mon"
-	line "manages to find"
+	text "Our Murkrow is"
+	line "always bringing us"
+	cont "these dark stones."
 
-	para "these dark stones"
-	line "in the forests"
+	para "We think he finds"
+	line "them by the towers"
 	cont "around the city."
-
-	para "I've been told"
-	line "they make some"
-	cont "Pokemon evolve."
 
 	para "I even gave one"
 	line "to Professor"
 	cont "Elm last week!"
+
+	para "He told me"
+	line "they make some"
+	cont "Pokemon evolve."
 
 	para "He was studying"
 	line "how it affects"
 	cont "Quilava."
 
 	para "Take this one"
-	line "#mon found"
+	line "our Murkrow found"
 	cont "this morning."
 
-	text "I've got too"
+	para "I've got too"
 	line "many already!"
 
 	done
