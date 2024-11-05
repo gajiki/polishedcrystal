@@ -1327,7 +1327,7 @@ GolduckEvosAttacks:
 	db -1 ; no more level-up moves
 
 MankeyEvosAttacks:
-	evo_data EVOLVE_LEVEL, 28, PRIMEAPE
+	evo_data EVOLVE_LEVEL, 25, PRIMEAPE
 	db -1 ; no more evolutions
 	db 1, SCRATCH
 	db 1, LOW_KICK
@@ -1340,12 +1340,14 @@ MankeyEvosAttacks:
 	db 19, SWAGGER
 	db 22, CROSS_CHOP
 	db 26, REVERSAL ; Assurance → egg move
+	db 28, MACH_PUNCH
 	db 29, FEINT_ATTACK ; Punishment → new move
 	db 33, THRASH
 	db 36, CLOSE_COMBAT
 	db 40, SCREECH
 	db 43, GUNK_SHOT ; Stomping Tantrum → HGSS tutor move
-	db 47, OUTRAGE
+	db 50, OUTRAGE
+	db 52, DRAIN_PUNCH
 	db -1 ; no more level-up moves
 
 PrimeapeEvosAttacks:
@@ -1364,12 +1366,14 @@ PrimeapeEvosAttacks:
 	db 19, SWAGGER
 	db 22, CROSS_CHOP
 	db 26, REVERSAL ; Assurance → egg move
-	db 30, FEINT_ATTACK ; Punishment → new move
-	db 35, THRASH
-	db 39, CLOSE_COMBAT
-	db 44, SCREECH
-	db 48, GUNK_SHOT ; Stomping Tantrum → HGSS tutor move
-	db 53, OUTRAGE
+	db 28, MACH_PUNCH
+	db 29, FEINT_ATTACK ; Punishment → new move
+	db 33, THRASH
+	db 36, CLOSE_COMBAT
+	db 40, SCREECH
+	db 43, GUNK_SHOT ; Stomping Tantrum → HGSS tutor move
+	db 50, OUTRAGE
+	db 52, DRAIN_PUNCH
 	db -1 ; no more level-up moves
 
 GrowlithePlainEvosAttacks:
@@ -3779,8 +3783,8 @@ MewtwoEvosAttacks:
 	db 55, AMNESIA
 	db 56, NASTY_PLOT ; Mist → Mew move
 	db 60, PSYSTRIKE
-	db 65, OCTAZOOKA
-	db 70, ZAP_CANNON
+	db 63, OCTAZOOKA
+	db 65, ZAP_CANNON
 	db -1 ; no more level-up moves
 
 MewEvosAttacks:
@@ -3894,6 +3898,7 @@ CyndaquilEvosAttacks:
 
 QuilavaEvosAttacks:
 	evo_data EVOLVE_LEVEL, 36, TYPHLOSION
+	evo_data EVOLVE_ITEM, DUSK_STONE, TYPHLOSION, HISUIAN_FORM
 	db -1 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
@@ -6761,12 +6766,14 @@ AnnihilapeEvosAttacks:
 	db 19, SWAGGER
 	db 22, CROSS_CHOP
 	db 26, REVERSAL ; Assurance → egg move
+	db 28, MACH_PUNCH
 	db 30, FEINT_ATTACK ; Punishment → new move
 	db 35, THRASH
 	db 39, CLOSE_COMBAT
 	db 44, SCREECH
 	db 48, GUNK_SHOT ; Stomping Tantrum → HGSS tutor move
-	db 53, OUTRAGE
+	db 52, DRAIN_PUNCH
+	db 55, OUTRAGE
 	db -1 ; no more level-up moves
 
 EggEvosAttacks::

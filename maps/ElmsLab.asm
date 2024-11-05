@@ -217,6 +217,10 @@ CyndaquilPokeBallScript:
 	promptbutton
 	waitsfx
 	givepoke CYNDAQUIL, PLAIN_FORM, 5, ORAN_BERRY
+	loadmem wPartyMon1HPAtkDV, $ff
+	loadmem wPartyMon1DefSpeDV, $ff
+	loadmem wPartyMon1SatSdfDV, $ff
+	loadmem wPartyMon1Personality, SHINY_MASK | HIDDEN_ABILITY | NAT_SATK_UP_ATK_DOWN
 	writetext LyraChoosesStarterText
 	waitbutton
 	closetext
@@ -299,6 +303,10 @@ ChikoritaPokeBallScript:
 	promptbutton
 	waitsfx
 	givepoke CHIKORITA, PLAIN_FORM, 5, ORAN_BERRY
+	loadmem wPartyMon1HPAtkDV, $ff
+	loadmem wPartyMon1DefSpeDV, $ff
+	loadmem wPartyMon1SatSdfDV, $ff
+	loadmem wPartyMon1Personality, SHINY_MASK | HIDDEN_ABILITY | NAT_SATK_UP_ATK_DOWN
 	writetext LyraChoosesStarterText
 	waitbutton
 	closetext

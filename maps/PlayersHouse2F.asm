@@ -53,23 +53,9 @@ if !DEF(DEBUG)
 
 	opentext
 
-	giveitem MAX_POTION, 99
-	giveitem FULL_RESTORE, 99
-	giveitem MAX_REVIVE, 99
-	giveitem MAX_ELIXIR, 99
-	giveitem HP_UP, 99
-	giveitem PROTEIN, 99
-	giveitem IRON, 99
-	giveitem CARBOS, 99
-	giveitem CALCIUM, 99
-	giveitem ZINC, 99
-	giveitem RARE_CANDY, 99
 	giveitem PP_UP, 99
 	giveitem PP_MAX, 99
 	giveitem SACRED_ASH, 99
-	giveitem MAX_REPEL, 99
-	giveitem MAX_REPEL, 99
-	giveitem ESCAPE_ROPE, 99
 	giveitem ABILITY_CAP, 99
 	giveitem LEAF_STONE, 99
 	giveitem FIRE_STONE, 99
@@ -81,8 +67,8 @@ if !DEF(DEBUG)
 	giveitem DUSK_STONE, 99
 	giveitem SHINY_STONE, 99
 	giveitem ODD_SOUVENIR, 99
-	giveitem EXP_SHARE, 99
-	giveitem LEFTOVERS, 99
+	giveitem LINKING_CORD, 99
+	giveitem EXP_SHARE, 1
 	giveitem MULCH, 99
 	giveitem SWEET_HONEY, 99
 	giveitem SILVER_LEAF, 99
@@ -108,16 +94,22 @@ endr
 
 	; good party
 	givepoke MEWTWO, MEWTWO_ARMORED_FORM, 1, LEFTOVERS
-	loadmem wPartyMon2EVs+0, 252
-	loadmem wPartyMon2EVs+1, 252
-	loadmem wPartyMon2EVs+2, 252
-	loadmem wPartyMon2EVs+3, 252
-	loadmem wPartyMon2EVs+4, 252
-	loadmem wPartyMon2EVs+5, 252
+	loadmem wPartyMon1EVs+0, 252
+	loadmem wPartyMon1EVs+1, 252
+	loadmem wPartyMon1EVs+2, 252
+	loadmem wPartyMon1EVs+3, 252
+	loadmem wPartyMon1EVs+4, 252
+	loadmem wPartyMon1EVs+5, 252
+	loadmem wPartyMon1HPAtkDV, $ff
+	loadmem wPartyMon1DefSpeDV, $ff
+	loadmem wPartyMon1SatSdfDV, $ff
+	loadmem wPartyMon1Personality, SHINY_MASK | ABILITY_1 | NAT_SATK_UP_ATK_DOWN
+
+	givepoke MANKEY, PLAIN_FORM, 5, LEFTOVERS
 	loadmem wPartyMon2HPAtkDV, $ff
 	loadmem wPartyMon2DefSpeDV, $ff
 	loadmem wPartyMon2SatSdfDV, $ff
-	loadmem wPartyMon2Personality, SHINY_MASK | HIDDEN_ABILITY | NAT_SATK_UP_ATK_DOWN
+	loadmem wPartyMon2Personality, SHINY_MASK | HIDDEN_ABILITY | NAT_ATK_UP_SATK_DOWN
 
 	closetext
 	end

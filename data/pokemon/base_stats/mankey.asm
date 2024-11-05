@@ -7,7 +7,11 @@
 	db NO_ITEM, KEE_BERRY ; held items
 	dn GENDER_F50, HATCH_MEDIUM_FAST ; gender ratio, step cycles to hatch
 
+	if DEF(FAITHFUL)
 	abilities_for MANKEY, VITAL_SPIRIT, ANGER_POINT, DEFIANT
+else
+	abilities_for MANKEY, DEFIANT, ANGER_POINT, GORILLA_TACTICS
+endc
 	db GROWTH_MEDIUM_FAST ; growth rate
 	dn EGG_GROUND, EGG_GROUND ; egg groups
 

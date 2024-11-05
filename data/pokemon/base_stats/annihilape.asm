@@ -1,4 +1,4 @@
-	db 110, 115,  80,  90,  50,  90 ; 535 BST
+	db 110, 120, 100, 110,  30, 100 ; 570 BST
 	;   hp  atk  def  spe  sat  sdf
 
 	db FIGHTING, GHOST ; type
@@ -8,9 +8,9 @@
 	dn GENDER_F50, HATCH_MEDIUM_FAST ; gender ratio, step cycles to hatch
 
 if DEF(FAITHFUL)
-	abilities_for ANNIHILAPE, VITAL_SPIRIT, INNER_FOCUS, DEFIANT
+	abilities_for ANNIHILAPE, VITAL_SPIRIT, ANGER_POINT, DEFIANT
 else
-	abilities_for ANNIHILAPE, GORILLA_TACTICS, INNER_FOCUS, DEFIANT
+	abilities_for ANNIHILAPE, DEFIANT, ANGER_POINT, GORILLA_TACTICS
 endc
 	db GROWTH_MEDIUM_FAST ; growth rate
 	dn EGG_GROUND, EGG_GROUND ; egg groups

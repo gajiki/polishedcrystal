@@ -110,7 +110,7 @@ endc
 if DEF(FAITHFUL)
 	move STRENGTH,        EFFECT_NORMAL_HIT,         80, NORMAL,    100, 15,   0, PHYSICAL
 else
-	move STRENGTH,        EFFECT_NORMAL_HIT,        100, FIGHTING,  100, 10,   0, PHYSICAL
+	move STRENGTH,        EFFECT_NORMAL_HIT,         90, FIGHTING,  100, 10,   0, PHYSICAL
 endc
 	move ABSORB,          EFFECT_LEECH_HIT,          20, GRASS,     100, 25,   0, SPECIAL
 	move MEGA_DRAIN,      EFFECT_LEECH_HIT,          40, GRASS,     100, 15,   0, SPECIAL
@@ -343,10 +343,11 @@ endc
 	move KNOCK_OFF,       EFFECT_KNOCK_OFF,          65, DARK,      100, 20, 100, PHYSICAL
 if DEF(FAITHFUL)
 	move HIDDEN_POWER,    EFFECT_HIDDEN_POWER,       60, NORMAL,    100, 15,   0, SPECIAL
+	move CROSS_CHOP,      EFFECT_NORMAL_HIT,        100, FIGHTING,   80,  5,   0, PHYSICAL
 else
 	move HIDDEN_POWER,    EFFECT_HIDDEN_POWER,       80, UNKNOWN_T, 100, 15,   0, SPECIAL
+	move CROSS_CHOP,      EFFECT_NORMAL_HIT,        100, FIGHTING,  100,  5,   0, PHYSICAL
 endc
-	move CROSS_CHOP,      EFFECT_NORMAL_HIT,        100, FIGHTING,   80,  5,   0, PHYSICAL
 	move AQUA_JET,        EFFECT_PRIORITY_HIT,       40, WATER,     100, 20,   0, PHYSICAL
 	move RAIN_DANCE,      EFFECT_RAIN_DANCE,          0, WATER,      -1,  5,   0, STATUS
 	move SUNNY_DAY,       EFFECT_SUNNY_DAY,           0, FIRE,       -1,  5,   0, STATUS
