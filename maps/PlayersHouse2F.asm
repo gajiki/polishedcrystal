@@ -94,22 +94,22 @@ endr
 
 	; good party
 	givepoke MEWTWO, MEWTWO_ARMORED_FORM, 1, LEFTOVERS
-	loadmem wPartyMon1EVs+0, 252
-	loadmem wPartyMon1EVs+1, 252
-	loadmem wPartyMon1EVs+2, 252
-	loadmem wPartyMon1EVs+3, 252
-	loadmem wPartyMon1EVs+4, 252
-	loadmem wPartyMon1EVs+5, 252
-	loadmem wPartyMon1HPAtkDV, $ff
-	loadmem wPartyMon1DefSpeDV, $ff
-	loadmem wPartyMon1SatSdfDV, $ff
-	loadmem wPartyMon1Personality, SHINY_MASK | ABILITY_1 | NAT_SATK_UP_ATK_DOWN
-
-	givepoke MANKEY, PLAIN_FORM, 5, LEFTOVERS
+	loadmem wPartyMon2EVs+0, 252
+	loadmem wPartyMon2EVs+1, 252
+	loadmem wPartyMon2EVs+2, 252
+	loadmem wPartyMon2EVs+3, 252
+	loadmem wPartyMon2EVs+4, 252
+	loadmem wPartyMon2EVs+5, 252
 	loadmem wPartyMon2HPAtkDV, $ff
 	loadmem wPartyMon2DefSpeDV, $ff
 	loadmem wPartyMon2SatSdfDV, $ff
-	loadmem wPartyMon2Personality, SHINY_MASK | HIDDEN_ABILITY | NAT_ATK_UP_SATK_DOWN
+	loadmem wPartyMon2Personality, SHINY_MASK | ABILITY_1 | NAT_SATK_UP_ATK_DOWN
+
+	givepoke MANKEY, PLAIN_FORM, 5, LEFTOVERS
+	loadmem wPartyMon3HPAtkDV, $ff
+	loadmem wPartyMon3DefSpeDV, $ff
+	loadmem wPartyMon3SatSdfDV, $ff
+	loadmem wPartyMon3Personality, SHINY_MASK | HIDDEN_ABILITY | NAT_ATK_UP_SATK_DOWN
 
 	closetext
 	end
