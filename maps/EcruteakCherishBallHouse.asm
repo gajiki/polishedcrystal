@@ -17,15 +17,15 @@ EcruteakCherishBallHouse_MapScriptHeader:
 	object_event  5,  4, SPRITE_GRANNY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, EcruteakCherishBallHouseGrannyText, -1
 
 EcruteakCherishBallHouseGrampsScript:
-	checkevent EVENT_GOT_CHERISH_BALL_FROM_ECRUTEAK
+	checkevent EVENT_GOT_DUSK_STONE_FROM_ECRUTEAK
 	iftrue_jumptextfaceplayer .Text2
 	faceplayer
 	opentext
 	writetext .Text1
 	promptbutton
-	verbosegiveitem CHERISH_BALL
+	verbosegiveitem DUSK_STONE
 	iffalse_endtext
-	setevent EVENT_GOT_CHERISH_BALL_FROM_ECRUTEAK
+	setevent EVENT_GOT_DUSK_STONE_FROM_ECRUTEAK
 	jumpthisopenedtext
 
 .Text2:
@@ -37,16 +37,32 @@ EcruteakCherishBallHouseGrampsScript:
 	done
 
 .Text1:
-	text "I've lived a long"
-	line "life, and I have"
+	text "My #mon"
+	line "manages to find"
 
-	para "memories that I"
-	line "will cherish for-"
-	cont "ever."
+	para "these dark stones"
+	line "in the forests"
+	cont "around the city."
 
-	para "Take this and make"
-	line "a new memory to"
-	cont "cherish."
+	para "I've been told"
+	line "they make some"
+	cont "Pokemon evolve."
+
+	para "I even gave one"
+	line "to Professor"
+	cont "Elm last week!"
+
+	para "He was studying"
+	line "how it affects"
+	cont "Quilava."
+
+	para "Take this one"
+	line "#mon found"
+	cont "this morning."
+
+	text "I've got too"
+	line "many already!"
+
 	done
 
 EcruteakCherishBallHouseGrannyText:
