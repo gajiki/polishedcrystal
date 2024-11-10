@@ -26,7 +26,7 @@ Moves::
 if DEF(FAITHFUL)
 	move NIGHT_SLASH,     EFFECT_NORMAL_HIT,         70, DARK,      100, 15,   0, PHYSICAL
 else
-	move NIGHT_SLASH,     EFFECT_CONFUSE_HIT         85, DARK,      100, 15,  30, PHYSICAL
+	move NIGHT_SLASH,     EFFECT_CONFUSE_HIT,        85, DARK,      100, 15,  30, PHYSICAL
 endc
 	move AIR_SLASH,       EFFECT_FLINCH_HIT,         75, FLYING,     95, 15,  30, SPECIAL
 	move SWORDS_DANCE,    EFFECT_ATTACK_UP_2,         0, NORMAL,     -1, 20,   0, STATUS
