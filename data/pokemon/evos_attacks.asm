@@ -6492,9 +6492,12 @@ SylveonEvosAttacks:
 	db 20, DRAINING_KISS
 	db 25, SKILL_SWAP
 	db 29, HEAL_BELL ; Misty Terrain → HGSS tutor move
+	db 30, FRESH_SNACK
 	db 33, LIGHT_SCREEN
+	db 35, METRONOME
 	db 37, MOONBLAST
 	db 41, DOUBLE_EDGE ; Last Resort → tutor move
+	db 43, TRI_ATTACK
 	db 45, PLAY_ROUGH ; Psych Up → new move
 	db -1 ; no more level-up moves
 
