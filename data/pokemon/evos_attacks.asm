@@ -1351,6 +1351,7 @@ MankeyEvosAttacks:
 	db -1 ; no more level-up moves
 
 PrimeapeEvosAttacks:
+	evo_data EVOLVE_MOVE, OUTRAGE, ANNIHILAPE
 	evo_data EVOLVE_LEVEL, 50, ANNIHILAPE
 	db -1 ; no more evolutions
 	db 1, OUTRAGE
